@@ -33,6 +33,15 @@
             animation: fadeIn 2s ease-in;
         }
 
+        img {
+            max-width: 300px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in;
+        }
+
         @keyframes glow {
             from {
                 text-shadow: 0 0 10px #fff, 0 0 20px #ff6b6b, 0 0 30px #ff6b6b;
@@ -67,7 +76,6 @@
             }
         }
 
-        /* Разные цвета и задержки для конфетти */
         .confetti:nth-child(odd) { background: #e74c3c; }
         .confetti:nth-child(even) { background: #3498db; }
         .confetti:nth-child(3n) { background: #2ecc71; }
@@ -78,10 +86,11 @@
 </head>
 <body>
     <h1>С Днем Рождения!</h1>
-    <p>Поздравляю с этим прекрасным праздником! Желаю от всей души оставаться такой же красивой, женственной и счастливой. Пусть твои глаза всегда сияют без причины, а окружающие дарят заботу и внимание. Наслаждайся каждым прожитым мгновением, пусть сбудутся все самые сокровенные желания. Желаю крепкого здоровья, благополучия в семье, душевного спокойствия и настоящего женского счастья! С днем рождения!
-</p>
+    <p>Желаю тепла, исполнения желаний, женского счастья, чтобы душа улыбалась, а глаза горели. Ну и конечно же, здоровья и просто хорошего настроения.</p>
+    <a href="https://pozdravok.com/pozdravleniya/den-rozhdeniya/zhenshchine/2.htm" target="_blank">
+        <img src="https://pozdravok.com/cards/den-rozhdeniya/zhenshine/den-rozhdeniya-zhenshine-kartinka.gif" alt="Стихи с днем рождения женщине" />
+    </a>
 
-    <!-- Конфетти -->
     <div class="confetti" style="left: 10%;"></div>
     <div class="confetti" style="left: 20%;"></div>
     <div class="confetti" style="left: 30%;"></div>
@@ -93,7 +102,6 @@
     <div class="confetti" style="left: 90%;"></div>
 
     <script>
-        // Динамическое добавление конфетти для большего эффекта
         for (let i = 0; i < 50; i++) {
             const confetti = document.createElement('div');
             confetti.className = 'confetti';
